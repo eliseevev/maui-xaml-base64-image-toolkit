@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eliseev.MauiXamlBase64ImageToolkit.Example.MainPage"
+             xmlns:controls="clr-namespace:Eliseev.MauiXamlBase64ImageToolkit;assembly=Eliseev.MauiXamlBase64ImageToolkit">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <controls:ImageBase64 Base64Source="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEYElEQVR4nO1aa2/SUBjmR6i/S/0R06SdH/AyDEvcwOEyyge/qQmtGd6iiWOA8bLop6mJbqxDvN8juhnHwmXOTYbHPC0HC+PSc4S1sD7Jm5bT09PzPue90R6Xy4EDBw4cOGiJ4OHJfZKg+CVRXggJ8lpIVIgtBXMT5CTmenYwvNfVCUyMRA6Fjigly5VjFEmQ80FRPvjfykuD+oATwSskMBMlpxcT5PTzW/aUxYQ2R8xVtwilzE1C8PDkPrry45Hr1ivHKOOTN6g15LjcQRIUP115q5XhFWoJkiiP8hCg4mbN7G2gDI8E7k3R4JhkJ0BUirh5TI1XBwz6L5Hg2OWah9i6TU3QWFBgJiBUiaZeNU78aX1A2mZ8qF3bMGfMnbZxE+B+MlWVXm7rCAFn/BES8EV6qq2jBLh7UBwCRMcCSM+5wNGnU8SrxnavC3jVmJbKTiandx8BXkPhpZMQ210EuJ9MaSsP5U/MRe1vAcNqnBztCgk9EAOG5vWVwrFVP596hyyufiUbWyViBH6nVr+R8dQMl3JDczHyqZgl7wsrO0/A0Pw08T3T/RRHz/x0Q0uA8j9Lm6QVcH1UvcNMwOz3D9UxdpSA4bpARaVR6sLKAy9yy9uUxO+XuWXtuprNMCkffvOY/DGQuOMW4ElGiT+d+GcBycYBi5p9sxWGhQC/tkqmlR9ZuE2KpY0aK7IkBniS+suSZspD2k0Q8qG40tKPjQI3e5X7ro1Jj5YR4K4ULa2ygBkCWCT6OaWNt1ba1CzBcgLcbaSTBEw8u09K5S1tPMQAM+P3DQEn5mLk23peGwvR3+z4tiGgGczWAjTlLa8XtPzfNwSYqQVoyiv9KRMp/YDJwrpCwMdilnxeWyXHn/6rAHGONkR0lgm2qwWMKQ8BkNXFukLA0npBe2jiS7rahnNgaT3PHAOa1QL1Ka9RtrGEgHOvZrWHbpa3iF+9q63iRlkveC68fsRMQLN+NOXBAmAJZu/bkRigZjPagxeymWq5i3PWCTbr1yjl2YqAUcOqAzhvFMR4Ccj8zBEe1MegrmaBeMXvAZzzrFCzfm/zP7gIqC+pu0pAoosEmJW+dQG33QlYqARBBENjQGT9O1ybBn/3BgHnKmmQrrrRGnDN2BdlLoBiB4o2Up4WQsgmPUHAEkMhhBq/3SsxAH0CHO8GLSHgfWFFSzf1pTDa3hV+bOsPC4GboNKrB9qw8jzKm3mZYvmfIbfF4hAgOhZA+soFhtu8g+xrF/BWvhqfSuFzXLTLBAhKATcee3jTcsWN+wag/HGTH00xd7pvmJkACTvDRYWcjN+wXPEaEkyuPMQT07fLSqIyz2EBsg83j41fslxpXgmcieguICgjzAScHQzvhelggFPha5Yrwyoj4avU/3PSwPk9Lh4ERfkgtpxTS4BJ2Skm1AvmhjkaVr4sicp+LuVrSBCVHI2mPSS5kHDxgKsTkAbO78GWcwQTuonaliIoBX2O8ii32Ttw4MCBA9fuwV/CTxWyOMtsIwAAAABJRU5ErkJggg=="/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
