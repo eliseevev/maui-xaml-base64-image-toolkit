@@ -23,8 +23,6 @@
 		<PackageTags>maui, base64, base 64, maui base 64, maui image, 64 image1 </PackageTags>
 		<SignAssembly>False</SignAssembly>
 		<Copyright>MIT</Copyright>
-		<RepositoryUrl>https://github.com/eliseevev/maui-xaml-base64-image-toolkit</RepositoryUrl>
-		<AssemblyVersion>7.0.0.0</AssemblyVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
