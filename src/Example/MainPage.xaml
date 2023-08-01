@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:base64Controls="http://eliseev/base64Image"
+             x:Class="Example.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <base64Controls:ImageBase64
+                HeightRequest="200"
+                Base64Source="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"/>
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
