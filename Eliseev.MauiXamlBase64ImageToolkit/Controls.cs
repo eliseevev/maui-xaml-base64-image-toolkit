@@ -1,4 +1,6 @@
-﻿namespace Eliseev.MauiXamlBase64ImageToolkit
+﻿using Eliseev.MauiXamlBase64ImageToolkit.Infrastructure;
+
+namespace Eliseev.MauiXamlBase64ImageToolkit
 {
     /// <summary>
     /// For inject MauiXamlBase64ImageToolkit to program.
@@ -10,8 +12,14 @@
         /// Inject MauiXamlBase64ImageToolkit to program.
         /// For resolve error "XFC0000 Cannot resolve type"
         /// </summary>
-        public static void Init()
+        public static void Init(IServiceCollection serviceCollection)
         {
+            if (serviceCollection == null)
+            {
+                throw new NullReferenceException(nameof(serviceCollection));
+            }
+
+            serviceCollection.AddSingleton<Base64ImageSourceCache>();
         }
     }
 }

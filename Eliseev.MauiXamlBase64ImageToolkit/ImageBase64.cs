@@ -1,7 +1,12 @@
-﻿namespace Eliseev.MauiXamlBase64ImageToolkit
+﻿using Eliseev.MauiXamlBase64ImageToolkit.Infrastructure;
+using System.ComponentModel;
+
+namespace Eliseev.MauiXamlBase64ImageToolkit
 {
     public class ImageBase64 : Microsoft.Maui.Controls.Image
     {
+        private string base64;
+
         public static readonly BindableProperty Base64SourceProperty =
             BindableProperty.Create(
                 nameof(Base64Source),
@@ -24,8 +29,14 @@
 
         static void OnBase64SourceChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            MemoryStream stream = new MemoryStream(Convert.FromBase64String((string)newValue));
-            ((Image)bindable).Source = ImageSource.FromStream(() => stream);
+            var imageSource = Base64ImageSourceCache.Instance.GetOrCreate((string)newValue);
+            ((ImageBase64)bindable).base64 = (string)newValue;
+            ((Image)bindable).Source = imageSource;
+        }
+
+        ~ImageBase64()
+        {
+            Base64ImageSourceCache.Instance.Remove(base64);
         }
     }
 }

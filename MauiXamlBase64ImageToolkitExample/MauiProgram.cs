@@ -6,7 +6,7 @@ namespace MauiXamlBase64ImageToolkitExample
     {
         public static MauiApp CreateMauiApp()
         {
-            Eliseev.MauiXamlBase64ImageToolkit.Controls.Init();
+            
 
             var builder = MauiApp.CreateBuilder();
             builder
@@ -17,8 +17,11 @@ namespace MauiXamlBase64ImageToolkitExample
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+
+            Eliseev.MauiXamlBase64ImageToolkit.Controls.Init(builder.Services);
+
 #if DEBUG
-		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
